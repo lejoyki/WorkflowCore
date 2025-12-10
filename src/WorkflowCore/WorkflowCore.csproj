@@ -5,12 +5,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Version>1.0.6</Version>
-    <PackageOutputPath>D:\Code\NuGet\Workflow</PackageOutputPath>
+    <PackageId>WorkflowCore</PackageId>
+    <Title>WorkflowCore</Title>
+    <Version>2.0.0</Version>
+    <PackageOutputPath>..\..\doc\nuget</PackageOutputPath>
     <PackageIcon>workflow.png</PackageIcon>
     <Description>为流程的构建提供便捷条件</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Lejoy</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/lejoyke/WorkflowCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lejoyke/WorkflowCore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>workflow;orchestration;engine;dotnet</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,10 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="workflow.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <None Include="..\..\README.md" Pack="True" PackagePath="\" />
+    <None Include="..\..\doc\nuget\workflow.png" Pack="True" PackagePath="\" />
   </ItemGroup>
 
 </Project>
